@@ -1,0 +1,10 @@
+<img src="../static/images/user_image/{{user_image}}.jpg" alt="" >
+<h3>{{username}}</h3>
+<hr>
+<h2>LOI CHUC</h2>
+{% for present in presents%}
+<img src="../static/images/sender_image/{{present.image}}.jpg" alt="" width="20%" height="20%">
+<h3>{{present.sendername}}</h3>
+<li>{{present.wishing}}</li>
+<hr>
+{% endfor%}

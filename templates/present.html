@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>20-10</title>
+    <link rel="stylesheet" href="../static/css/present.css">
+  </head>
+  <body>
+    <div class="center-container">
+        <div class="main-container">
+          <img id="avatar" class="round-border" src="../static/images/user_image/{{user_image}}.jpg" alt="" height="auto" width="12%">
+          <h2>{{username}}</h2>
+          <div class="wish-box-center">
+            <div class="wish-box-container round-border">
+              {% for present in presents %}
+                <div class="wish-box">
+                  <div class="avatar-container">
+                    <img class= "round-border" src="../static/images/sender_image/male.jpg" alt="" height="auto" width="39%">
+                    <h4>{{present.sendername}}</h4>
+                  </div>
+                  <div class="message round-border">
+                    <span>{{present.wishing}}</span>
+                  </div>
+                </div>
+              {% endfor%}
+            </div>
+          </div>
+          <h3>FROM VIT 15 WITH LOVE <3</h3>
+        </div>
+    </div>
+  </body>
+</html>

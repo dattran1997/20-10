@@ -1,0 +1,117 @@
+.center-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* background-color: yellow; */
+  background-image: linear-gradient(to bottom right,#ee9ca7 , #ffdde1);
+}
+.main-container{
+  padding: 1.2%;
+  /* background-color: blue; */
+  width: 80%;
+  text-align: center;
+}
+.wish-box-container{
+  background-color:#f83600 ;
+  transition: 3s;
+  padding: 1%;
+  display: block;
+  width: 69%;
+  height: 420px;
+  margin-bottom: 2%;
+  overflow-y: auto;
+}
+.wish-box-center{
+  display: flex;
+  justify-content: center;
+}
+
+.wish-box{
+  display: flex;
+  margin-top:3%;
+}
+
+.avatar-container{
+  display: block;
+  width: 15%;
+}
+
+.message{
+  /* background-color: green; */
+  background-image: linear-gradient(to bottom right,#f6d365,#fda085);
+  height: 80%;
+  max-width: 70%;
+  margin-top: 2.5%;
+  padding: 2.2%;
+  text-align: left;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.round-border{
+  border-radius: 25px;
+}
+
+
+
+/* width */
+div.wish-box-container::-webkit-scrollbar {
+    width: 20px;
+}
+
+/* Track */
+div.wish-box-container::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #f83600;
+    border-radius: 10px;
+}
+
+/* Handle */
+div.wish-box-container::-webkit-scrollbar-thumb {
+    background: #f83600;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+div.wish-box-container::-webkit-scrollbar-thumb:hover {
+    /* background: grey; */
+    background-image: linear-gradient(to bottom right,#f6d365,#fda085);
+}
+
+div.wish-box-container:hover{
+  animation-name: abc;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  background-color: #f9d423;
+  transform: scale(1.25);
+}
+
+@keyframes abc {
+  from{top: 50px;}
+  to{top:0px;}
+}
+
+h2{
+  margin-top: 0.5%;
+  margin-bottom: 2%;
+  background: -webkit-linear-gradient(#ff758c,#ff7eb3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h3{
+  margin: 3% 0;
+  font-size: 200%;
+  background: -webkit-linear-gradient(#ff0844,#ffb199);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h4{
+  margin: 3% 0;
+  font-size: 85%;
+  color:#f83600;
+}
+
+
+img{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
